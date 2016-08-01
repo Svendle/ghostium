@@ -9,7 +9,7 @@
   @include breakpoint(medium) {
     width: 100%;
     height: 30%;
-    min-height: 300px;
+    min-height: 350px;
   }
 }
 
@@ -20,16 +20,17 @@
   top: 0;
   left: 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
-  background-color: $drawer-background-color;
+  background-color: #fff;
 }
 
 .cover-container {
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  margin-top: -150px;
   padding: 50px 10% 10%;
   width: 100%;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: #333332;
+  text-align: center;
 
   @include breakpoint(medium) {
     text-align: center;
@@ -42,10 +43,11 @@
     border: 3px solid #fff;
     border-radius: 50%;
     border-radius: 50%;
-    max-height: 100px;
+    max-height: 150px;
+    max-width: 150px;
     transition: opacity .3s ease-in-out;
     box-shadow:
-      0 0 3px 3px rgba(0, 0, 0, 0.3),
+      0 0 1px 1px rgba(0, 0, 0, 0.3),
       inset 0 0 40px 2px rgba(0, 0, 0, 0.3);
     backface-visibility: hidden;
   }
@@ -67,4 +69,5 @@
 .cover-description {
   font-size: 16px;
   line-height: 1.2;
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 }
