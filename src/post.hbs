@@ -1,9 +1,10 @@
 {{!< default}}
 
 <section class="wrapper wrapper-post">
+  {{#post}}
+  <div id="post-cover" style="background-image: url({{image}})"></div>
   <div class="wrapper-container">
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {{post_class}}">
-      {{#post}}
         <section class="post-container">
           <header class="post-header">
             <ul class="post-meta-list">
@@ -81,7 +82,7 @@
             </div>
           </footer>
         </section>
-      {{/post}}
+
       <section itemprop="comment" class="post-comments">
         <div id="disqus_thread"></div>
       </section>
@@ -89,6 +90,7 @@
 
     {{> footer this}}
   </div>
+  {{/post}}
 </section>
 
 <script type="text/javascript">

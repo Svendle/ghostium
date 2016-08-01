@@ -22,6 +22,17 @@
   font-size: 13.5px;
 }
 
+#post-cover {
+    position: relative;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 40%;
+    background-size: cover;
+    box-shadow: inset 0 -10px 30px rgba(0,0,0,0.3);
+}
+
 .post-title {
   line-height: 1;
   padding-bottom: 15px;
