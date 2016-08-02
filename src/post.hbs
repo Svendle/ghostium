@@ -2,7 +2,9 @@
 
 <section class="wrapper wrapper-post">
   {{#post}}
-  <div id="post-cover" style="background-image: url({{image}})"></div>
+  {{#if image}}
+    <div id="post-cover" style="background-image: url({{image}})"></div>
+  {{/if}}
   <div class="wrapper-container">
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {{post_class}}">
         <section class="post-container">

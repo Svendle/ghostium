@@ -31,9 +31,12 @@
   </footer>
   <section itemprop="description" class="post-item-excerpt">
     {{!Cover Image}}
-    <div class="post-image">
-        <a href="{{url}}"><img src="{{image}}"></a>
-    </div>
-    <p>{{excerpt words="35"}}&hellip;</p>
+    {{#if image}}
+        <div class="post-image">
+            <a href="{{url}}"><img src="{{image}}"></a>
+        </div>
+    {{else}}
+        <p>{{excerpt words="35"}}&hellip;</p>
+    {{/if}}
   </section>
 </article>
