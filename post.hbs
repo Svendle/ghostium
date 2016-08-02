@@ -63,11 +63,11 @@
                 {{#if author.location}}
                   <p class="post-author-location">{{author.location}}</p>
                 {{/if}}
-                {{#if author.website}}
+                {{!-- {{#if author.website}}
                   <p class="post-author-website">
                     <a href="{{author.website}}" rel="nofollow">{{author.website}}</a>
                   </p>
-                {{/if}}
+                {{/if}} --}}
                 <p class="post-info">
                   <b class="post-info-title">Published on</b>
                   <time class="post-date">{{date format='MMMM DD, YYYY'}}</time>
@@ -75,7 +75,7 @@
               </div>
             </div>
             <div class="post-social">
-              <h4 class="post-footer-heading">Spread the word</h4>
+              <h4 class="post-footer-heading">Share</h4>
               <a href="#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
               <a href="#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
               <a href="#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
