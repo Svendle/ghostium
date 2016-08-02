@@ -51,6 +51,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 }
 
 .post-item-meta-item {
@@ -129,5 +130,3 @@
   &.post-list-pagination-item-prev { float: left; }
   &.post-list-pagination-item-next { float: right; }
 }
-
-
