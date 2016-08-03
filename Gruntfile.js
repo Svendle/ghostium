@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     sass: '<%= dir.assets %>/_scss',
     css: '<%= dir.assets %>/css',
     js: '<%= dir.assets %>/js',
-    images: '<%= dir.assets %>/img',
+    images: '<%= dir.assets %>/images',
     fonts: '<%= dir.assets %>/fonts'
   };
 
@@ -316,7 +316,7 @@ module.exports = function(grunt) {
               // aren't in a usemin block.
               '*.{ico,png,md,hbs}',
               'partials/**/*',
-              '<%= dir.images %>/**/*',
+              'assets/images/**/*',
               '<%= dir.fonts %>/**/*'
             ],
             dest: '<%= dir.build %>'
